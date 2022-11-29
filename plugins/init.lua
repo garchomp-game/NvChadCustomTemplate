@@ -13,6 +13,7 @@ return {
     override_options = {
       ensure_installed = {
         -- "masonPackageame",
+        -- After adding and saving, run :PackerSynk, then :MasonInstallAll
       },
     },
   }
