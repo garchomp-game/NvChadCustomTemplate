@@ -12,9 +12,20 @@ return {
   ["williamboman/mason.nvim"] = {
     override_options = {
       ensure_installed = {
-        -- "masonPackageame",
-        -- After adding and saving, run :PackerSynk, then :MasonInstallAll
+        "lua-language-server",
       },
     },
-  }
+  },
+  ["williamboman/mason.nvim"] = {
+    override_options = {
+      ensure_installed = 
+        require "custom.plugins.override.mason-setup",
+    },
+  },
+  ["nvim-treesitter/nvim-treesitter"] = {
+    override_options = {
+      ensure_installed = 
+        require "custom.plugins.override.treesitter-setup"
+    }
+  },
 }
